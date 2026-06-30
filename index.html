@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Азиз | Портфолио Разработчика</title>
+    <!-- Подключаем файл со стилями -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключаем красивый шрифт Inter -->
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Контейнер для падающих лепестков сакуры -->
+    <div id="sakura-container"></div>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="logo">Aziz.dev</div>
+        <nav class="nav">
+            <a href="#about" class="nav-link">Обо мне</a>
+            <a href="#hobbies" class="nav-link">Увлечения</a>
+            <a href="#contacts" class="nav-link btn-contact-nav">Контакты</a>
+        </nav>
+    </header>
+
+    <!-- Основной контент страницы -->
+    <main class="container">
+        
+        <!-- 1. Главный экран (Hero Section) -->
+        <section id="about" class="hero-section">
+            <!-- Блок с твоим первым фото -->
+            <div class="photo-container animated-fade-in-left">
+                <img src="photo_2026-06-30_13-55-02.jpg" alt="Азиз — Веб-разработчик" class="profile-photo">
+            </div>
+
+            <!-- Блок с главным текстом -->
+            <div class="text-container animated-fade-in-right">
+                <span class="badge">Привет! 👋</span>
+                <h1>Меня зовут Азиз</h1>
+                <p class="subtitle">Школьник и начинающий Fullstack-разработчик из Джизака.</p>
+                
+                <p class="description">
+                    Я успешно завершил углубленный курс по <strong>Frontend-разработке</strong> и прямо сейчас осваиваю <strong>Backend</strong>. Изучаю, как создавать современные интерфейсы и строить надежную внутреннюю логику для сайтов и приложений.
+                </p>
+
+                <!-- Теги навыков -->
+                <div class="skills-mini">
+                    <span class="skill-tag">Frontend (Done)</span>
+                    <span class="skill-tag backend-tag">Backend (Learning)</span>
+                </div>
+
+                <!-- Кнопка действия -->
+                <div class="cta-buttons">
+                    <a href="#contacts" class="btn primary-btn">Связаться со мной</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Секция увлечений -->
+        <section id="hobbies" class="hobbies-section">
+            <!-- Блок с текстом про хобби -->
+            <div class="hobbies-text-container">
+                <span class="badge badge-hobbies">Вне кода 🕹️</span>
+                <h2>Мои увлечения</h2>
+                <p class="hobbies-description">
+                    Программирование занимает много времени, но в свободные часы я стараюсь переключаться на то, что меня вдохновляет:
+                </p>
+                
+                <ul class="hobbies-list">
+                    <li>
+                        <span class="hobby-icon">👟</span>
+                        <div>
+                            <strong>Стрит-стайл мода:</strong> Мне нравится уличная культура, оверсайз-стиль и стильные стритвир-образы.
+                        </div>
+                    </li>
+                    <li>
+                        <span class="hobby-icon">🎧</span>
+                        <div>
+                            <strong>Музыка:</strong> Помогает мне расслабиться после сложной учебы или настроиться на написание кода.
+                        </div>
+                    </li>
+                    <li>
+                        <span class="hobby-icon">🎮</span>
+                        <div>
+                            <strong>Игры:</strong> В свободное время люблю поиграть, чтобы потренировать реакцию и стратегическое мышление.
+                        </div>
+                    </li>
+                    <li>
+                        <span class="hobby-icon">🌳</span>
+                        <div>
+                            <strong>Прогулки:</strong> Лучший способ отдохнуть от экрана монитора и освежить мысли на свежем воздухе.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Блок с твоими фото (галерея из двух изображений) -->
+            <div class="hobbies-photo-container">
+                <div class="hobby-photo-wrapper">
+                    <img src="photo_2026-06-30_14-15-56.jpg" alt="Мой стиль стрит-стайл 1" class="hobby-photo">
+                </div>
+                <div class="hobby-photo-wrapper">
+                    <img src="photo_2026-06-30_14-16-10.jpg" alt="Мой стиль стрит-стайл 2" class="hobby-photo">
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Секция контактов -->
+        <section id="contacts" class="contacts-section">
+            <h2 class="section-title">Давайте создадим что-то вместе!</h2>
+            <p class="section-subtitle">Вы можете написать мне напрямую в мессенджеры или оставить сообщение через форму.</p>
+
+            <div class="contacts-grid">
+                <!-- Левая колонка: быстрые ссылки -->
+                <div class="contacts-info">
+                    <h3>Быстрая связь</h3>
+                    <div class="social-buttons">
+                        <!-- НАСТРОЙКА: Замени ТВОЙ_НИК на свой ник в Телеграм без знака @ -->
+                        <a href="https://t.me" target="_blank" class="social-btn tg-btn">
+                            Открыть Telegram
+                        </a>
+
+                        <!-- НАСТРОЙКА: Замени +998901234567 на свой номер (без пробелов) -->
+                        <a href="tel:+998901234567" class="social-btn phone-btn">
+                            Позвонить мне
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Правая колонка: Форма обратной связи -->
+                <div class="contacts-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Ваше имя</label>
+                            <input type="text" id="name" placeholder="Иван" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-input">Как с вами связаться (Email / Телефон / TG)</label>
+                            <input type="text" id="contact-input" placeholder="@username или +998..." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Ваше сообщение</label>
+                            <textarea id="message" rows="4" placeholder="Привет! Есть проект для тебя..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn submit-btn">Отправить сообщение</button>
+                    </form>
+
+                    <!-- Скрытое уведомление об успешной отправке -->
+                    <div id="successMessage" class="success-message" style="display: none;">
+                        <h3>🎉 Спасибо!</h3>
+                        <p>Ваше сообщение успешно «отправлено». Когда ты допишешь Backend, оно будет приходить по-настоящему!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript для падающих лепестков -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            this.style.display = 'none'; 
+            const successBox = document.getElementById('successMessage');
+            successBox.style.display = 'block'; 
+        });
+
+        // Скрипт падающих лепестков сакуры
+        const container = document.getElementById('sakura-container');
+        const maxPetals = 30;
+
+        function createPetal() {
+            if (container.children.length >= maxPetals) return;
+
+            const petal = document.createElement('div');
+            petal.classList.add('petal');
+            
+            const size = Math.random() * 10 + 8;
+            petal.style.width = `${size}px`;
+            petal.style.height = `${size * 0.8}px`;
+            petal.style.left = `${Math.random() * 100}vw`;
+            
+            const delay = Math.random() * 5;
+            const duration = Math.random() * 5 + 5;
+            petal.style.animationDelay = `${delay}s`;
+            petal.style.animationDuration = `${duration}s`;
+
+            container.appendChild(petal);
+
+            setTimeout(() => {
+                petal.remove();
+            }, (duration + delay) * 1000);
+        }
+
+        setInterval(createPetal, 250);
+    </script>
+</body>
+</html>
